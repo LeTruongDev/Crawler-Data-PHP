@@ -60,12 +60,12 @@ $ofInterest = $html->find('.article-care article');
 
 $resultReadMany = crawlData($readMany);
 $resultRelatedNews = crawlData($relatedNews);
-$resultOfInterest = crawlData($ofInterest);
+// $resultOfInterest = crawlData($ofInterest);
 
 $combinedData = [
     'readMany' => $resultReadMany,
     'relatedNews' => $resultRelatedNews,
-    'ofInterest' => $resultOfInterest,
+    // 'ofInterest' => $resultOfInterest,
 ];
 
 print_r($combinedData);
